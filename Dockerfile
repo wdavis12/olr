@@ -5,7 +5,8 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
   && yum install -y R \
   libcurl-devel \
   openssl-devel \
-  libxml2-devel
+  libxml2-devel \
+  unixODBC-devel
 
 RUN echo "local({options(repos=c(CRAN = 'http://cran.rstudio.com/'))})" > /lib64/R/etc/Rprofile.site
 
