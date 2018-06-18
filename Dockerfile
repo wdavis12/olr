@@ -11,6 +11,6 @@ RUN echo "local({options(repos=c(CRAN = 'http://cran.rstudio.com/'))})" > /lib64
 
 ENV R_PROFILE="/lib64/R/etc/Rprofile.site"
 
-RUN R -e 'install.packages(c("devtools","testthat","roxygen2"))'
+RUN R -e 'install.packages(c("devtools","testthat","roxygen2","rmarkdown"))'
 
 CMD ["/bin/bash"]
