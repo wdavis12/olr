@@ -7,7 +7,12 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
   openssl-devel \
   libxml2-devel \
   pandoc \
-  pandoc-citeproc
+  pandoc-citeproc \
+  python-pip \
+  && pip install --upgrade pip \
+  && pip install tableaudocumentapi \
+  numpy \
+  pandas
 
 RUN echo "local({options(repos=c(CRAN = 'http://cran.rstudio.com/'))})" > /lib64/R/etc/Rprofile.site
 
