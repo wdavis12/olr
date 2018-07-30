@@ -8,9 +8,10 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
   libxml2-devel \
   pandoc \
   pandoc-citeproc \
-  python-pip \
-  && pip install --upgrade pip \
-  && pip install tableaudocumentapi \
+  python34
+  python34-pip \
+  && run pip3 install --upgrade pip \
+  && pip3 install tableaudocumentapi \
   numpy \
   pandas
 
