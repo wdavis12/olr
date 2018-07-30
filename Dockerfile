@@ -14,7 +14,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
   python34 \
   && echo /usr/lib64 >> /etc/ld.so.conf \
   && ldconfig \
-  yum install -y python34-pip \
+  && yum install -y python34-pip \
   python34-devel \
   && pip3 install numpy pandas tableaudocumentapi
 
