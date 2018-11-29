@@ -10,6 +10,8 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
   pandoc-citeproc \
   gcc \
   wget \
+  libaio \
+  unixODBC-devel \
   sudo  \
   python34 \
   && echo /usr/lib64 >> /etc/ld.so.conf \
